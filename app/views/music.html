@@ -1,0 +1,17 @@
+<body ng-controller="MusicCtrl">
+	<div>
+		<ul>
+			<li ng-repeat="generos in generos">
+				<a href="#/music" ng-click="setCurrentGenero(generos)">{{generos}}</a>
+			</li>
+		</ul>
+		 <div id="cds">
+		<ul ng-repeat="cd in datosAjax | filter: {genero: currentGenero}">
+			<li>
+				<a href="#"><img src="{{cd.src}}" alt="s" width="150" class="img-thumbnail"></a>
+				<p>{{cd.titulo}}</p>
+			</li>
+		</ul>
+		</div>
+	</div>
+</body>
