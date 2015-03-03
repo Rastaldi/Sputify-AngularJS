@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sputifyAngularJsApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+
+        <!-- para que se vea bien en todos los navegadores -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="../styles/css/music.css">
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../bower_components/angular-aria/angular-aria.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../bower_components/angular-messages/angular-messages.js"></script>
+        <script src="../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../bower_components/angular-touch/angular-touch.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <script src="../bower_components/APIyoutube/mediaelement-and-player.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Caudex' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+
+
+
+    </head>
+    <body ng-controller="PlayCtrl">
+<!-- menu -->
+        <div class="header">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">SPUTIFY</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href="/views/music.html">MUSIC</a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="/views/search.html">BUSCAR</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- el cd que da vueltas -->
+        <div class="cd">
+            <section id="wrap">
+                <div id="box">
+                    <div id="front"></div>
+                    <div id="cd"></div>
+                    <div id="back"></div>
+                    <div id="left"></div>
+                    <div id="top"></div>
+                    <div id="bottom"></div>
+                </div>  
+            </section>
+        </div>
+
+        <div class="container-fluid" id="video_youtube">
+
+
+
+            <!--<video width="640">
+                <source type="video/youtube" src="{{youtube}}" />
+            </video> 
+
+
+            <iframe id="ytplayer" width="640" height="360" src="{{youtube}}" frameborder="0" allowfullscreen>
+            </iframe> -->
+            <iframe width="640" height="360" id="iframe" controls="1" frameborder="0" allowfullscreen></iframe>
+        </div>
+       
+
+
+<!-- el bloque que matchea los albumes de artiastas similares -->
+        <div class="relacionados">
+            <div id="discos_music" class="row">
+            Relacionados:<br /><br />
+                <div ng-repeat="rel in datosJsonPlay">
+                    <div ng-if="rel.artista === artist && rel.id !== currentIdPlay">
+                        <a id="btn_discos" href="play.html" ng-click="setCurrentId(rel.id)"><img class="img-responsive" ng-src="{{rel.image}}" alt="{{rel.titulo}}" width="150" ></a>
+                        <div class="row">
+                            <div id="titulo_music" class="col-md-12" >{{rel.titulo}}</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- los track del album en cuestion -->
+        <div class="container">
+            <div class="row">
+                <div ng-repeat="cd in datosJsonPlay">
+                    <div ng-if="cd.id === currentIdPlay" class="traclist_play">
+                        <div id="tracklist_tracks" ng-repeat="track in tracklist" class="col-md-4">
+                            <a href="" id="tracklist_tracks_link" ng-click="playTrack(track.src)">{{track.name}}</a>
+                            <!--<button id="btn_stop" ng-click="stopTrack()"><img src="../images/stop.png" alt=""></button>
+                            
+                               <a href="" ng-click="stopTrack()"><img src="../images/stop.png" alt=""></a>-->
+                            
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../scripts/app.js"></script>
+        <script src="../scripts/controllers/music.js"></script>
+        <script src="../scripts/controllers/play.js"></script>
+    </body>
+</html>
+

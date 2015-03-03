@@ -17,25 +17,34 @@ var app = angular.module('sputifyAngularJsApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'angularFireProvider',
     'firebase'
   ]);
   app.config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/favoritos.html',
-        controller: 'FavoritosCtrl'
+      .when('/search', {
+        templateUrl: 'views/search.html',
+        controller: 'SearchCtrl'
       })
       .when('/music', {
         templateUrl: 'views/music.html',
         controller: 'MusicCtrl'
       })
-      .when('/conciertos', {
-        templateUrl: 'views/conciertos.html',
-        controller: 'ConciertosCtrl'
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
       })
-      .when('/favoritos', {
-        templateUrl: 'views/favoritos.html',
-        controller: 'FavoritosCtrl'
+      .when('/play', {
+        templateUrl: 'views/play.html',
+        controller: 'PlayCtrl'
+      })
+      .when('/callback', {
+        templateUrl: 'views/callback.html',
+        controller: 'LoginCtrl'
+      })
+        .when('/chat', {
+        templateUrl: 'views/chat.html',
+        controller: 'ChatCtrl'
       })
       .otherwise({
         redirectTo: '/'

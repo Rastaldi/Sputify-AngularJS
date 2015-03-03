@@ -1,105 +1,163 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/css/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="sputifyAngularJsApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+        <!-- endbower -->
+        <!-- endbuild -->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+        <!-- Aqui declaramos los estilos -->
+        <link rel="stylesheet" href="styles/css/music.css">
+        <link rel="stylesheet" href="styles/css/bootstrap.css">
+        <link rel="stylesheet" href="styles/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'>
+        <!-- endbuild -->
 
-            <a class="navbar-brand" href="#/">SPUTIFY</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/music">Music</a></li>
-              <li><a ng-href="#/conciertos">Conciertos</a></li>
-              <li><a ng-href="#/favoritos">Favoritos</a></li>
-            </ul>
-          </div>
+    </head>
+    <body>
+    <!-- El header que contendra nuestro menu RWD con bootstrap-->
+     <div class="header">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">SPUTIFY</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href="/views/music.html">MUSIC</a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="/views/search.html">BUSCAR</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
+        <!-- el body que tendra la imagen de fondo, el eslogan y creador -->
+        <div class="fondo_guitarra">
+            <img src="../images/artist_collage.jpg" class="img-responsive" alt="a">
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-    </div>
+            <div class="titulo">
+                <section class="text">
+                    <h3>sputify</h3>
+                    <h1><span class="fontawesome-star star"></span> <span>live your music</span> <span class="fontawesome-star star"></span></h1>
+                </section>
+            </div>
+            <div class="creador">
+                <!--Designed and Produced by Jorge Ariza-->
+                <section class="london">
+                    <div class="container-fruid">
+                        <h5 id="op" class="header">Designed and Produced by Jorge Ariza</h5>
+                    </div>
+                </section>
+            </div>
+        </div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script>
+            !function (A, n, g, u, l, a, r) {
+                A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
+                    (A[l].q = A[l].q || []).push(arguments)
+                }, A[l].l = +new Date, a = n.createElement(g),
+                        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+            }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+        </script>
+        <script>
+            var SPY = function () {
+                function e(a, d, b) {
+                    var c, f, g, h;
+                    b == a.length ? k.animationComplete = !0 : (g = d.innerHTML, h = Math.floor(21 * Math.random() + 5), c = 32 === a[b] ? 32 : a[b] - h, f = setInterval(function () {
+                        d.innerHTML = g + String.fromCharCode(c);
+                        c == a[b] ? (clearInterval(f), c = 32, b++, setTimeout(function () {
+                            e(a, d, b);
+                        }, 10)) : c++;
+                    }, 5));
+                }
+                var k = {};
+                return k = {animationComplete: !1, text: function (a) {
+                        this.animationComplete = !1;
+                        a = document.getElementById(a);
+                        for (var d = a.innerHTML, b = [], c = 0; c < d.length; c++) {
+                            b.push(d.charCodeAt(c));
+                        }
+                        a.innerHTML = "";
+                        e(b, a, 0);
+                    }};
+            }();
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-      <script src="bower_components/angularfire/dist/angularfire.js"></script>
-    <script src="bower_components/firebase/firebase.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+
+            $('document').ready(function () {
+
+                // Hide header
+                $('.header').hide();
+                // Transition background
+                $('.london').fadeIn(1200);
+
+
+                // Timeout for crypto text
+                setTimeout(function () {
+                    $('.header').fadeIn('slow');
+                    SPY.text('op');
+                }, 1000);
+
+            });
+        </script>
+
+        <!-- build:js(.) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="bower_components/angular-touch/angular-touch.js"></script>
+        <script src="bower_components/angular-spotify/dist/angular-spotify.min.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/music.js"></script>
-        <script src="scripts/controllers/login.js"></script>
-        <script src="scripts/controllers/random.js"></script>
-        <script src="scripts/controllers/conciertos.js"></script>
-        <script src="scripts/controllers/favoritos.js"></script>
+        
         <!-- endbuild -->
         <!-- ddbb -->
 
         <!-- endddbb -->
 
-</body>
+    </body>
 </html>

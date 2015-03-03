@@ -7,27 +7,61 @@
  * # LoginCtrl
  * Controller of the sputifyAngularJsApp
  */
- var app = angular.module('sputifyAngularJsApp', ['ngRoute', 'firebase']);
- app.controller('LoginCtrl', ['$scope','$firebaseSimpleLogin' , function ($scope, $firebaseSimpleLogin) {
+ var app = angular.module('sputifyAngularJsApp', ['ngRoute', 'spotify']);
 
- 	var sputyfyDB = new Firebase("https://sputifydb.firebaseapp.com");
- 	var loginDB = $firebaseSimpleLogin(sputyfyDB);
+ app.config(function (SpotifyProvider) {
+    SpotifyProvider.setClientId('51360a88d15e469e9831831b4414a9d4');
+    SpotifyProvider.setRedirectUri('http://localhost:9000/views/music.html');
+    SpotifyProvider.setScope('playlist-read-private');
+  });
 
- 	$scope.SignIn = function($scope) {
- 		var username = $scope.user.email;
- 		var password = $scope.user.password;
+ app.controller('LoginCtrl', ['$scope', 'Spotify', function ($scope, Spotify) {
 
- 		loginDB.$login('password', {
- 			email: username,
- 			password: password
- 		})
- 		.then(function(user) {
-            // Success callback
-            console.log('Authentication successful');
-        }, function(error) {
-            // Failure callback
-            console.log('Authentication failure');
-        });
-					    // Auth Logic will be here
-		}			
-				}]);
+    //logeo con SPOTIFY API
+    $scope.login = function () {
+      Spotify.login().then(function (data) {
+        //console.log(data);
+        $scope.container_login = document.getElementById('container_login');
+        $scope.container_login.appendChild(data);
+
+      });
+    };
+
+	
+	
+      
+	$scope.arrayAlbums = [''];
+
+	$scope.beyonceAlbumsF = Spotify.search('Beyonce', 'album').then(function (data) {
+  	//console.log(data);
+  	$scope.beyonceAlbums = data;
+  		for (var i = 0; i < $scope.beyonceAlbums.length; i ++) {
+  			$scope.arrayAlbums.push($scope.beyonceAlbums[i].items)
+  		}
+  		//$scope.arrayAlbums = $scope.beyonceAlbums.albums.items;
+  	
+
+
+  	
+	});
+
+	
+	//$scope.nirvanaAlbumsF = Spotify.search('Nirvana', 'album').then(function (data) {
+  	//$scope.nirvanaAlbums = data;
+  	//$scope.arrayAlbums.push($scope.nirvanaAlbums.albums.items);
+//});
+
+	
+	//console.log($scope.arrayAlbums);
+	//console.log($scope.beyonceAlbums);
+	//console.log('-->' + $scope.arrayAlbums);
+	
+	$scope.currentUser = Spotify.getCurrentUser().then(function (data) {
+  console.log(data);
+});
+
+console.log($scope.currentUser);
+
+
+
+		}]);

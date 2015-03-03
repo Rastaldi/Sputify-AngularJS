@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html ng-app="sputifyAngularJsApp">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+
+
+        <!-- endbuild -->
+
+        <!-- bower:js -->
+        <link rel="stylesheet" href="../styles/css/music.css">
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../bower_components/angular-aria/angular-aria.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../bower_components/angular-messages/angular-messages.js"></script>
+        <script src="../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../bower_components/angular-touch/angular-touch.js"></script>    <!--<script src="../../bower_components/angular/angular.min.js"></script>-->
+        <script src="../bower_components/angular-spotify/src/angular-spotify.js"></script>
+        <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+        <!-- endbower -->
+
+
+        <!-- menu -->
+    </head>
+    <body ng-controller="SearchCtrl">
+   <div class="header">
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">SPUTIFY</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href="/views/music.html">MUSIC</a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="">BUSCAR</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a ng-href="">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- barra de buscador chula-->
+        <div class="container">	
+            <div class="row">	
+                <section class="webdesigntuts-workshop">
+                    <form role="form" class="arreglo">	
+                        <input type="search" ng-model="artist" placeholder="Busca por Artista" >		    	
+                        <button ng-click="searchArtist(artist)">Search</button>		    
+                    </form>
+                </section>
+            </div>
+        </div>
+
+		<!-- las caratulas de los cds de la busqueda -->
+        <div class="container" id="resultSearch" >
+            <div id="discos_music" class="row">
+                <div ng-repeat="img in image track by $id($index)" class="col-lg-3" id="discos_repeat"> 	
+                    <a id="btn_discos" href="" ng-click="description(img)" >
+                        <img class="img-responsive" ng-src="{{img}}" alt="{{cd.titulo}}" >
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="nuevoLink">
+            <ol>{{titulo.name}}
+                <div ng-repeat="tr in trackSearch" id="nuevo">
+                    <li><a href="">
+                            {{tr}}
+                    </li></a>
+                </div>
+            </ol>
+        </div>
+
+
+
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="../scripts/app.js"></script>
+
+        <script src="../scripts/controllers/search.js"></script>
+        <!-- endbuild -->
+
+
+
+    </body>
+</html>

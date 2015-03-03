@@ -1,0 +1,540 @@
+#discos_music {
+	float: left;
+	z-index: 80;	
+  margin-top: 35px;
+ color: white;
+	
+}
+#generos_music{
+	margin-top: 30px;
+	font-size: 1.3em;
+	font-weight: bolder;
+	margin-bottom: 30px;
+	float: right;
+	width: 700px;
+	height: 40px;
+}
+#titulo_music{
+	font-size: 1em;
+	color: black;
+	font-weight: bold;
+	color: white;
+
+}
+#artista_music{
+	font-size: 0.85em;
+	color: grey;
+}
+
+#discos_repeat {
+	margin-bottom: 30px;
+}
+
+#discos_music img:hover {
+	-moz-box-shadow: -2px 1px 66px #ffffff;
+-webkit-box-shadow: -2px 1px 66px #ffffff;
+box-shadow: -2px 1px 66px #ffffff;
+}
+
+
+#discos_repeat img{
+	width: 150px;
+	height: 150px;
+	
+}
+
+
+#js-navbar-collapse ul {
+	margin-left: 200px;
+}
+
+
+
+
+
+
+/* parte de play */
+
+
+#video_youtube iframe {
+  position: relative;
+  top: -380px;
+}
+
+
+*{ margin:auto; padding:0; }
+ 
+ body {
+ 	background-color:#9D9D9D;
+ }  
+
+/*
+  3d Animation
+*/
+#wrap{ 
+  position: relative; 
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  width:350px; 
+  height:350px; 
+}
+
+#box{ 
+  width:100%; 
+  height:100%; 
+  display: block; 
+  position: absolute; 
+  -webkit-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-animation: spinaround 8s infinite linear;
+  animation: spinaround 8s infinite linear;
+}
+#box > div{ width:350px; height:350px; position: absolute; overflow:hidden; }
+
+div#front{ 
+  /*background:url(http://ughh.com/store/covers_large/IFMS3165CD.jpg) no-repeat top left;*/
+  background-size:350px 350px;
+}
+
+div#back{ 
+  -webkit-transform:translateZ(-10px) rotateY(180deg);
+  -ms-transform:translateZ(-10px) rotateY(180deg);
+  transform:translateZ(-10px) rotateY(180deg);
+  /*background:url(http://ughh.com/store/covers_large/IFMS3165CD-2-Back.jpg) no-repeat top left #222; */
+  background-size:350px 350px;
+}
+
+div#cd{ 
+  -webkit-transform:translateZ(-5px) translateX(125px);
+  -ms-transform:translateZ(-5px) translateX(125px);
+  transform:translateZ(-5px) translateX(125px);
+  box-shadow:0 0 0 5px silver inset, 0 0 0 100px #f6f6f6 inset, 0 0 0 105px silver inset, 0 0 0 140px rgba(255,255,255,0.25) inset; 
+  border-radius:350px;
+}
+
+div#left, div#right{ 
+  -webkit-transform:translateZ(-5px) rotateY(90deg);
+  -ms-transform:translateZ(-5px) rotateY(90deg);
+  transform:translateZ(-5px) rotateY(90deg);
+  width:10px;
+  background:#222;
+}
+
+div#left{ left:-5px; }
+div#right{ left:340px; }
+
+div#top, div#bottom{ 
+  background: #222;
+  -webkit-transform: translateZ(-5px) rotateX(90deg);
+  -ms-transform: translateZ(-5px) rotateX(90deg);
+  transform: translateZ(-5px) rotateX(90deg);
+  height:10px; 
+}
+
+div#top{ top:-5px; }
+div#bottom{ top: 345px; }
+
+@-webkit-keyframes spinaround{
+  to{-webkit-transform:rotateY(360deg)}
+}
+@keyframes spinaround{
+  to{transform:rotateY(360deg);-ms-transform:rotateY(360deg);}
+}
+
+
+
+
+/* Font Family
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
+
+/* Desktop
+================================================== */
+
+.container2 { position:relative; margin:0 auto; width:700px; }
+.column { width:inherit; }
+
+
+/* Tablet (Portrait)
+================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.container2 { width:556px; }
+}
+
+
+/* Mobile (Portrait)
+================================================== */
+
+@media only screen and (max-width: 767px) {
+.container2 { width:300px; }
+}
+
+
+/* Mobile (Landscape)
+================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container2 { width:420px; }
+}
+
+
+/* CSS Reset
+================================================== */
+
+
+
+/* Stilos Básicos de la pag
+================================================== */
+
+
+
+
+/* Typography
+================================================== */
+
+/* Custom Styles
+================================================== */
+
+/* CSS Transitions */
+* {
+-moz-transition:all 100ms ease;
+-o-transition:all 100ms ease;
+-webkit-transition:all 100ms ease;
+transition:all 100ms ease;
+}
+
+/* Highlight Styles */
+::selection { background-color: rgba(102, 175, 233, .6); color:white; }
+::-moz-selection { background-color:#262223; color:#444; }
+
+.cd {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	margin-top: 2%;
+	float: left;
+	left: 50px;
+}
+
+#video_youtube {
+	position: relative;
+	width: 650px;
+	height: 370px;
+	margin-left: 5%;
+	margin-top: 2.8%;
+	left: 680px;
+}
+
+.relacionados {
+	position: relative;
+	float: right;
+	margin-right: 5%;
+	top: -350px;
+}
+
+#cd_vueltas {
+	left: -100px;
+}
+
+
+
+@font-face {
+    font-family: 'enlaces';
+    src: url(../fonts/Fresco_Stamp.ttf);
+}
+
+
+
+
+
+
+#tracklist_tracks_link {
+	font-size: 2.1em;
+	color: white;
+	padding: 10px;
+	font-family: "enlaces";
+	 text-shadow: 2px 2px 0 #666565;
+  cursor: pointer;
+
+}
+
+#tracklist_tracks a:hover {
+	text-decoration: none;
+	 color: #666565;
+  text-shadow: 2px 2px 0 white;
+
+}
+
+
+.traclist_play {
+	margin-top: 80px;
+	height: 385px;
+}
+
+#tracklist_tracks {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+a:visited {
+	
+}
+
+
+.form-group {
+	width: 80%;
+	margin-top: 50px;
+}
+
+.form-group input{
+	width: 80%;
+}
+.form-group button{
+	width: 15%;
+	float: right;
+
+}
+
+
+
+
+/*   busqueda de artista  */
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+
+.webdesigntuts-workshop form {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -600px 0 0 -400px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+   }
+.webdesigntuts-workshop input[type="search"],
+.webdesigntuts-workshop button {
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  -ms-animation-duration: 0.6s;
+  -o-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+.webdesigntuts-workshop input[type="search"] {
+  font-family: "enlaces";
+  font-weight: 200;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.6);
+  text-indent: 25px;
+  text-shadow: 1px 1px 0px rgba(89, 104, 150, 0.3);
+  filter: dropshadow(color=white, offx=1px, offy=1px);
+  width: 90%;
+  height: 80px;
+  padding-right: 85px;
+  position: relative;
+  left: -200px;
+  top: 260px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: none;
+  border: 1px solid white;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  -khtml-border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 5px white;
+  -moz-box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 5px white; }
+  .webdesigntuts-workshop input[type="search"]:focus {
+    -webkit-box-shadow: inset 0px 0px 10px rgba(89, 104, 150, 0.2);
+    -moz-box-shadow: inset 0px 0px 10px rgba(89, 104, 150, 0.2);
+    box-shadow: inset 0px 0px 10px rgba(89, 104, 150, 0.2); }
+.webdesigntuts-workshop ::-webkit-input-placeholder {
+	position: relative;
+	top: 5px;
+	left: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  /* Firefox */
+  -webkit-animation-delay: 0.5s;
+  /*Safari and Chrome */
+  -webkit-animation-duration: 0.6s;
+  -moz-animation-duration: 0.6s;
+  -ms-animation-duration: 0.6s;
+  -o-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+.webdesigntuts-workshop :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+.webdesigntuts-workshop button {
+  position: relative;
+  top: 253px;
+  left: -280px;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  text-indent: -9999px;
+  background: rgba(89, 104, 150, 0.1);
+  box-shadow: inset 0px 0px 0px 1px white;
+  border: 1px white;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -khtml-border-radius: 30px; }
+  .webdesigntuts-workshop button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 17px;
+    width: 24px;
+    height: 24px;
+    /* http://glyphicons.com/ */
+    background: url(http://cl.ly/1B1J1v0c3f3a1S123W3c/icon.png); }
+  .webdesigntuts-workshop button:active {
+    position: absolute;
+    top: 273px; }
+  .webdesigntuts-workshop button:hover {
+    transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    -o-transform: scale(0.9, 0.9);
+    -moz-transform: scale(0.9, 0.9); }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+
+
+
+
+
+    /*    SEARCH  */
+
+
+    #resultSearch {
+    	margin-top: 150px;
+    }
+
+    .track_search {
+    	width: 250px;
+    	margin-right: 30px;
+    	float: right;
+    	position: fixed;
+    	top: 100px;
+    	left: 100px;
+    	border: 2px solid red;
+    	z-index: 200;
+    	font-size: 12px;
+    }
+    .nuevoLink ol{
+    	position: absolute;
+    	top: 300px;
+ 		font-size: 1.5em;
+ 		color: white;
+    	margin-left: 30px;
+    	
+    	width: 250px;
+    }
+    .nuevoLink {
+		margin-left: 50px;
+    }
+
+
+    .arreglo {
+    }

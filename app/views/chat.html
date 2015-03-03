@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="sputifyAngularJsApp">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
 
   <!-- para que se vea bien en todos los navegadores -->
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../styles/css/chat.css">
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/angular/angular.js"></script>
-   <script src="../bower_components/firebase/firebase.js"></script>
+  <script src="../bower_components/firebase/firebase.js"></script>
   <script src="../bower_components/angularfire/dist/angularfire.js"></script>
   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="../bower_components/angular-animate/angular-animate.js"></script>
@@ -33,21 +33,25 @@
 
 
 </head>
-<body>
-<!-- menu -->
-   <div class="header">
+<body ng-controller="ChatCtrl">
+
+<div class="header">
             <div class="navbar navbar-default" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
+
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/">SPUTIFY</a>
+
+                        <a class="navbar-brand" href="/"><font>SPUTIFY</font> </a>
                     </div>
+
                     <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
                         <ul class="nav navbar-nav">
                             <li><a href=""></a></li>
                             <li><a href=""></a></li>
@@ -55,7 +59,7 @@
                             <li><a href=""></a></li>
                             <li><a href="">MUSIC</a></li>
                             <li><a href=""></a></li>
-                            <li><a ng-href="/views/search.html">BUSCAR</a></li>
+                            <li><a ng-href="/views/login.html">BUSCAR</a></li>
                             <li><a href=""></a></li>
                             <li><a href=""></a></li>
                             <li><a href=""></a></li>
@@ -64,49 +68,30 @@
                             <li><a href=""></a></li>
                             <li><a href=""></a></li>
                             <li><a href=""></a></li>
-                            <li><a ng-href="">SUPPORT</a></li>
+                            <li><a ng-href="/favoritos">SUPPORT</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-<!-- cajon datos Spotify -->
-    <div class="profile_spotify"> </div>
-
-   <!-- lista de generos -->
-      <div class="container" ng-controller="MusicCtrl">
-     <div  class="row" id="generos_music">
-      <div ng-repeat="generos in generos" class="col-md-2">
-        <a href="#/music" ng-click="setCurrentGenero(generos)">{{generos}}</a>
+<div>
+  <form ng-submit="addComentario(nuevoComentario)">
+         <input type="text" ng-model="nuevoComentario">
+                    <button type="submit">enviar</button>
+      </form>
+      <div ng-repeat="com in comentarios">
+        {{com.text}}{{com.autor}}
       </div>
-    </div>
-    </div>
+</div>
 
-<!-- los cds en rejilla bootstrap-->
-    <div class="container" ng-controller="MusicCtrl">
-      <div id="discos_music" class="row">
-        <div ng-repeat="cd in datosJson | filter: {genero: currentGenero}" class="col-lg-2" id="discos_repeat"> 
-          <a id="btn_discos" href="play.html" ng-click="setCurrentId(cd.id)"><img class="img-responsive" ng-src="{{cd.image}}" alt="{{cd.titulo}}" ></a>
-          <div class="row">
-            <div id="titulo_music" class="col-md-12" >{{cd.titulo}}</div></div>
-            <div class="row">
-            <div id="artista_music" class="col-md-12">{{cd.artista}}</div></div>
-            
-      </div>
-    </div>
-    </div> 
-    
-<!-- el chat -->   
-<div ng-controller="ChatCtrl">  <div id="btn_logRegChat">
+<div id="btn_logRegChat">
   Debes identificarte para chatear
   <form>
     <!--<button type="button" ng-click="login()">Login</button>-->
-    <button type="button" class="btn btn-primary" ng-click="registrar()">Inicia sesion</button>
+    <button type="button" ng-click="registrar()">Registrate</button>
   </form>
 </div>
 
-<!-- login -->
 <div id="logeo_chat">
 <form ng-submit="logeoChat(currentUserName, currentUserPass)">
   <div id="error">User o Pass incorrecto</div>
@@ -116,17 +101,17 @@
     </form>
 </div>
 
-<!-- registro que ahora es el login -->
+
 <div id="registro_chat">
 <form ng-submit="registroChat(currentUserName, currentUserPass, currentUserSrc)">
-Nombre:<input type="text" ng-model="currentUserName">
-  Pass:<input type="password" ng-model="currentUserPass">
-  Image: <input type="text" ng-model="currentUserSrc" placeholder="http://">
-    <button type="submit" class="btn btn-primary">Identificate</button>
+  <input type="text" ng-model="currentUserName">
+  <input type="password" ng-model="currentUserPass">
+  <input type="text" ng-model="currentUserSrc">
+    <button type="submit">Registrar</button>
     </form>
 </div>
 
-<!-- el cajon del chat -->
+
 <form ng-submit="addComentario(nuevoComentario)">
 <div id="visible">
 <div class="chatter">
@@ -146,21 +131,15 @@ Nombre:<input type="text" ng-model="currentUserName">
       
     </div>
     </div>
-    <textarea name="chatter_message" ng-model="nuevoComentario" placeholder="Escribe aqui... " class="chatter_field chatter_message"></textarea>
+    <input name="chatter_message" ng-model="nuevoComentario" placeholder="Escribe aqui... " class="chatter_field chatter_message" ng-click="addComentario(nuevoComentario)">
   </div>
-  <button class="btn btn-primary" type="submit">enviar</button>
+  <button type="submit">enviar</button>
 </div>
     
  
 </div>
 </form>
-
-</div>
-
-<!-- los controladores de los que depende -->
-  <script src="../scripts/app.js"></script>
-  
-  <script src="../scripts/controllers/music.js"></script>
+<script src="../scripts/controllers/chat.js"></script>
   
 
 </body>

@@ -1,0 +1,777 @@
+[
+    {
+        "id": "1",
+        "genero": "Rock, All",
+        "anio": "1995",
+        "titulo": "Nevermind",
+        "artista": "Nirvana",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/nirvana.jpg",
+        "image2": "../images/nirvana2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/hTWKbfoikeg?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "genero": "Rock, All",
+        "anio": "1995",
+        "titulo": "Dark side of the moon",
+        "artista": "Pink Floyd",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/floyd.jpg",
+        "image2": "../images/floyd2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/BJwLiWpXYVI?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "genero": "Pop, All",
+        "anio": "1990",
+        "titulo": "Abbey Road",
+        "artista": "The Beathels",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/b.jpg",
+        "image2": "../images/b2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/eDdI7GhZSQA?rel=0",
+        "tracklist": [
+           {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "genero": "Pop, All",
+        "anio": "1998",
+        "titulo": "Single Ladies",
+        "artista": "Beyonce",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/yo.jpg",
+        "image2": "../images/yo2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/oKxuiw3iMBE?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "genero": "Rock, All",
+        "anio": "2000",
+        "titulo": "Riot",
+        "artista": "Paramore",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/paramore.jpg",
+        "image2": "../images/paramore2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/aCyGvGEtOwc?rel=0",
+        "tracklist": [
+           {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "genero": "Rock, All",
+        "anio": "1995",
+        "titulo": "Californication",
+        "artista": "Red Hot Chili Peppers",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/red.jpg",
+        "image2": "../images/red2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/YlUKcNNmywk?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "genero": "Rock, All",
+        "anio": "2005",
+        "titulo": "American Idiot",
+        "artista": "Green Day",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/green.JPG",
+        "image2": "../images/green2.JPG",
+        "youtube": "https://www.youtube-nocookie.com/embed/Ee_uujKuJMI?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "genero": "Indie, All",
+        "anio": "2003",
+        "titulo": "Ultraviolence",
+        "artista": "Lana del Rey",
+        "precio": "25€ - ",
+        "libras": "23£",
+        "image": "../images/lana.jpg",
+        "image2": "../images/lana2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/oKxuiw3iMBE?rel=0",
+        "tracklist": [
+            {
+                "name": "Nights in the Dark",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Red Planet",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Shadow of the Colossus",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Lonely Wanderer ",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Acid Wash",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Tropic of Cancer",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Untying the Knot",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Like Spinning Plates",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Fool for Life",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "Man On the Skyfire",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Better Half of Me",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "genero": "Pop, All",
+        "anio": "2014",
+        "titulo": "1000 Forms of Fear",
+        "artista": "Sia",
+        "precio": "13,26",
+        "libras": "18,32",
+        "image": "../images/sia.jpg",
+        "image2": "../images/sia2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/KWZGAExj-es?rel=0",
+        "tracklist": [
+            {
+                "name": "Chandelier",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Big Girls Cry",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Burn the Pages",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Eye of the Needle",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Hostage",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Straight for the Knife",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Elastic Heart",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Free the Animal",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Fire Meet Gasoline",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Cellophane",
+                "src": "../media/4/10 End of Time.mp3"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "genero": "Pop, All",
+        "anio": "2015",
+        "titulo": "Beyonce",
+        "artista": "Beyonce",
+        "precio": "17,50",
+        "libras": "21",
+        "image": "../images/beyon.png",
+        "image2": "../images/beyo2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/z_DqjQ2Y2q8?rel=0",
+        "tracklist": [
+             {
+                "name": "Chandelier",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Big Girls Cry",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Burn the Pages",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Eye of the Needle",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Hostage",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Straight for the Knife",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Elastic Heart",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Free the Animal",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Fire Meet Gasoline",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Cellophane",
+                "src": "../media/4/10 End of Time.mp3"
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "genero": "Pop, All",
+        "anio": "2015",
+        "titulo": "Rebel Heart",
+        "artista": "Madonna",
+        "precio": "21,99",
+        "libras": "25",
+        "image": "../images/madona.jpg",
+        "image2": "../images/madona2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/oKxuiw3iMBE?rel=0",
+        "tracklist": [
+             {
+                "name": "Chandelier",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Big Girls Cry",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Burn the Pages",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Eye of the Needle",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Hostage",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Straight for the Knife",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Elastic Heart",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Free the Animal",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Fire Meet Gasoline",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Cellophane",
+                "src": "../media/4/10 End of Time.mp3"
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "genero": "Pop, All",
+        "anio": "2011",
+        "titulo": "4",
+        "artista": "Beyonce",
+        "precio": "19,39",
+        "libras": "23,99",
+        "image": "http://www.alice965.com/Pics/AffinityClubs/137038/beyonce-4-album-cover-350.jpeg",
+        "image2": "../images/4_back_large.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/oKxuiw3iMBE?rel=0",
+        "tracklist": [
+            {
+                "name": "1+1",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "I Care",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "I Miss You",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Best Thing I Never Had",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Party(feat André 3000)",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Rather Die Young",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Start Over",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Love on Top",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Countdown",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "End of Time",
+                "src": "../media/4/10 End of Time.mp3"
+            },
+            {
+                "name": "I Was Here",
+                "src": "../media/4/11 I Was Here.mp3"
+            },
+            {
+                "name": "Run the World (Girls)",
+                "src": "../media/4/12 Run the World (Girls).m4a"
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "genero": "Pop, All",
+        "anio": "2011",
+        "titulo": "Talk That Talk",
+        "artista": "Rihanna",
+        "precio": "11,99",
+        "libras": "14,99",
+        "image": "../images/riri.jpg",
+        "image2": "../images/riri2.jpg",
+        "youtube": "https://www.youtube-nocookie.com/embed/ehcVomMexkY?rel=0",
+        "tracklist": [
+             {
+                "name": "Chandelier",
+                "src": "../media/4/01 1+1.mp3"
+            },
+            {
+                "name": "Big Girls Cry",
+                "src": "../media/4/02 I Care.mp3"
+            },
+            {
+                "name": "Burn the Pages",
+                "src": "../media/4/03 I Miss You.mp3"
+            },
+            {
+                "name": "Eye of the Needle",
+                "src": "../media/4/04 Best Thing I Never Had.mp3"
+            },
+            {
+                "name": "Hostage",
+                "src": "../media/4/05 Party (feat. Andre 3000 & Kanye W.mp3"
+            },
+            {
+                "name": "Straight for the Knife",
+                "src": "../media/4/06 Rather Die Young.mp3"
+            },
+            {
+                "name": "Elastic Heart",
+                "src": "../media/4/07 Start Over.mp3"
+            },
+            {
+                "name": "Free the Animal",
+                "src": "../media/4/08 Love on Top.mp3"
+            },
+            {
+                "name": "Fire Meet Gasoline",
+                "src": "../media/4/09 Countdown.mp3"
+            },
+            {
+                "name": "Cellophane",
+                "src": "../media/4/10 End of Time.mp3"
+            }
+        ]
+    }
+    
+]

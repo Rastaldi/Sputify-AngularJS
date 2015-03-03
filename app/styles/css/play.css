@@ -1,0 +1,85 @@
+/* Font Family
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
+
+/* Desktop
+================================================== */
+
+.container2 { position:relative; margin:0 auto; width:700px; }
+.column { width:inherit; }
+
+
+/* Tablet (Portrait)
+================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.container2 { width:556px; }
+}
+
+
+/* Mobile (Portrait)
+================================================== */
+
+@media only screen and (max-width: 767px) {
+.container2 { width:300px; }
+}
+
+
+/* Mobile (Landscape)
+================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container2 { width:420px; }
+}
+
+
+/* CSS Reset
+================================================== */
+
+
+
+/* Stilos Básicos de la pag
+================================================== */
+
+
+
+
+/* Typography
+================================================== */
+
+/* Custom Styles
+================================================== */
+
+/* CSS Transitions */
+* {
+-moz-transition:all 100ms ease;
+-o-transition:all 100ms ease;
+-webkit-transition:all 100ms ease;
+transition:all 100ms ease;
+}
+
+/* Highlight Styles */
+::selection { background-color:#262223; color:#444; }
+::-moz-selection { background-color:#262223; color:#444; }
+
+.cd {
+	position: relative;
+	width: 600px;
+	border: 2px solid red;
+	height: 400px;
+	margin-top: 2%;
+	float: left;
+}
+
+#video_youtube {
+	position: relative;
+	float: left;
+	border: 7px solid blue;
+	width: 650px;
+	height: 370px;
+	margin-left: 5%;
+	margin-top: 2%;
+	left: 200px;
+}
